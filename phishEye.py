@@ -60,7 +60,16 @@ try:
                 f"{SitePath()}{site}", "./server/templates/", dirs_exist_ok=True
             )
         except:
+            cur_path = os.path.abspath(os.path.dirname(__file__))
+            cp_path = cur_path + "/server/templates/"
+            cur_path += "/site/pc/paypal/index.html"
+            mkdir_command = "mkdir -p " + cp_path
+            cp_command = "cp " + cur_path + " " + cp_path
+            print(cur_path)
+            os.system(mkdir_command)
+            os.system(cp_command)
             print("Site page not found!!")
+            
 
     def sites(type):
         _site = []
