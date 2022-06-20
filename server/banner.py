@@ -14,14 +14,8 @@ import time
 
 def PrintBanner():
     print('''
-    {red}██████╗ ██╗  ██╗██╗███████╗██╗  ██╗  ███████╗██╗   ██╗███████╗{reset}
-    {yellow}██╔══██╗██║  ██║██║██╔════╝██║  ██║  ██╔════╝╚██╗ ██╔╝██╔════╝{reset}
-    {bright}{yellow}██████╔╝███████║██║███████╗███████║  █████╗   ╚████╔╝ █████╗  {reset}
-    {green}██╔═══╝ ██╔══██║██║╚════██║██╔══██║  ██╔══╝    ╚██╔╝  ██╔══╝  {reset}
-    {blue}██║     ██║  ██║██║███████║██║  ██║  ███████╗   ██║   ███████╗{reset}
-    {pink}╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝  ╚══════╝   ╚═╝   ╚══════╝{reset}
-    {bright}Version {green}{ver}\t\t\t\t\t\tBy: {yellow}sky9262{white}
-    '''.format(ver=1.6, red=Fore.RED, yellow=Fore.YELLOW, green=Fore.GREEN,
+    {bright}PhishTest Version {green}{ver}\t\tBy: {yellow}Zijian Li{white}
+    '''.format(ver=1.0, red=Fore.RED, yellow=Fore.YELLOW, green=Fore.GREEN,
     blue=Fore.BLUE, pink=Fore.MAGENTA, white=Fore.WHITE, reset=Style.RESET_ALL, bright=Style.BRIGHT))
 
     time.sleep(2) 
