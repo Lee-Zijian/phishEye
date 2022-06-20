@@ -13,7 +13,7 @@
 2. 安装依赖的工具包: `$ pip3 install -r requirements.txt`
 3. 访问 Ngrok 官网：<https://dashboard.ngrok.com/get-started/setup>，根据官方指引步骤注册账号，并将其提供的`authtoken`添加至本地环境以开通反向代理服务
 4. 启动 phishTest: `$ sudo python3 phishTest.py -s paypal -d pc -p 1234`，
-  * `-s, -d`: 用于指定仿造的目标网站，目前仅提供 paypal 前端网页
+  * `-s, -d`: 用于指定仿造的目标网站，目前仅提供 PayPal 前端网页
   * `-p`: 用于指定本地监听端口
   * *（注：请使用超级用户权限执行，否则反向代理初始化可能由于权限不足无法完成）*
 5. 使用浏览器访问生成的 `Ngrok public address` 或者 `Phishing short link` 网站链接即可，后端进程会抓取用户提交的输入数据，并记录至本地日志文件`captured.db`
