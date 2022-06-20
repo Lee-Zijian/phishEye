@@ -151,7 +151,7 @@ try:
         except:
             if is_connected():
                 print(
-                    "\r [ ! ] Short url error!!!\n [ ! ] Please make an issue on github (https://github.com/sky9262/phishEye)"
+                    "\r [ ! ] Short url error!!!\n"
                 )
             else:
                 print("You don't have internet connection for short url!!!")
