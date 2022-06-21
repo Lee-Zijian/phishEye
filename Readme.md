@@ -9,7 +9,7 @@
 
 ## 安装部署方式
 *注：以下操作建议在开启全局 VPN 的网络环境下操作（科学上网），否则某些工具包的安装以及反向代理生成链接可能无法正常完成*
-1. 进入 phishTest 所在目录: `$ cd phishTest`
+1. 进入 phishTest 所在目录: `$ cd phishTest`，*注：请勿在路径中包含中文以及空格，否则后续可能识别路径出错，导致初始化失败*
 2. 安装依赖的工具包: `$ pip3 install -r requirements.txt`
 3. 访问 Ngrok 官网：<https://dashboard.ngrok.com/get-started/setup>，根据官方指引步骤注册账号，并将其提供的`authtoken`添加至本地环境以开通反向代理服务
 4. 启动 phishTest: `$ sudo python3 phishTest.py -s paypal -d pc -p 1234`，
